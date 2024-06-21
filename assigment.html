@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Quiz</title>
+    <style>
+      #quiz {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      .question {
+        margin-bottom: 15px;
+      }
+      .options {
+        margin-bottom: 15px;
+      }
+      .result {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="quiz">
+      <div class="question">
+        <p>What is the capital of France?</p>
+      </div>
+      <div class="options">
+        <label><input type="radio" name="answer" value="Paris" /> Paris</label
+        ><br />
+        <label><input type="radio" name="answer" value="London" /> London</label
+        ><br />
+        <label><input type="radio" name="answer" value="Rome" /> Rome</label
+        ><br />
+        <label
+          ><input type="radio" name="answer" value="Berlin" /> Berlin</label
+        >
+      </div>
+      <button id="submitAnswer">Submit</button>
+      <p class="result" id="result"></p>
+    </div>
+    <script src="script3.js"></script>
+  </body>
+</html>

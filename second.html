@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <style>
+      #todoList {
+        max-width: 300px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        padding: 10px;
+        background-color: #f4f4f4;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .removeButton {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="todoList">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button id="addTaskButton">Add Task</button>
+      <ul id="tasks"></ul>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
